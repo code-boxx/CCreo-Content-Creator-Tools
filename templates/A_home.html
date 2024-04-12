@@ -1,0 +1,26 @@
+{% extends "A_template.html" %}
+
+{% block title %}Creator Tools{% endblock %}
+
+{% block head %}
+<style>
+#modstack{display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}
+@media screen and (max-width:768px){
+  #modstack{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+</style>
+{% endblock %}
+
+{% block body %}
+<div id="modstack" class="mb-3">
+  {% for i, mod in mods.items(): %}
+  {% if "hide" not in mod: %}
+  <div class="card p-3 m-1">
+    <a href="/{{ i }}"><img class="card-img-top mb-2" decoding="async" src="{{ url_for('static', filename=i+'_'+mod['suffix']+'.webp') }}"></a>
+    <h5 class="card-title">{{ mod["name"] }}</h5>
+    <p class="card-text text-secondary">{{ mod["desc"] }}</p>
+  </div>
+  {% endif %}
+  {% endfor %}
+</div>
+{% endblock %}

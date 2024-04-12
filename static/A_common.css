@@ -1,0 +1,21 @@
+/* (PART A) ICOMOON */
+@font-face{font-family:icomoon;src:url(icomoon.eot?vyybk8);src:url(icomoon.eot?vyybk8#iefix) format('embedded-opentype'),url(icomoon.ttf?vyybk8) format('truetype'),url(icomoon.woff?vyybk8) format('woff'),url(icomoon.svg?vyybk8#icomoon) format('svg');font-weight:400;font-style:normal;font-display:block}
+[class*=" icon-"],[class^=icon-]{font-family:icomoon!important;speak:never;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+.icon-home3:before{content:"\e902"}.icon-price-tags:before{content:"\e936"}.icon-spinner9:before{content:"\e982"}.icon-mug:before{content:"\e9a2"}.icon-star-full:before{content:"\e9d9"}.icon-heart:before{content:"\e9da"}
+.icon{font-size:26px}
+
+/* (PART B) WHOLE PROJECT */
+* { box-sizing: border-box; }
+
+/* (PART C) "CONSOLE" */
+#console{position:fixed;top:0;left:0;z-index:9999;width:100vw;height:100vh;backdrop-filter:blur(3px);background:rgba(0,0,0,.5);display:flex;align-items:center;justify-content:center}
+#conwrap{position:relative;width:80%;height:80%;max-width:800px;border-radius:15px}
+#conclose{position:absolute;top:5px;right:5px;font-size:24px}
+#conmsg{max-height:100%;overflow:auto}
+
+/* (PART D) DROP ZONE */
+.drop{height:100px;padding:10px;border:2px dashed #e3e3e3;background:#fff;overflow:auto}
+.drop.highlight{background:#fffcd4}
+
+/* (PART E) DRAG-DROP */
+.dragover{background:#fffcd4 !important}

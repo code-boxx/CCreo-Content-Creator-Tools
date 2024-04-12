@@ -1,0 +1,60 @@
+{% extends "A_template.html" %}
+
+{% block title %}Resize Image{% endblock %}
+
+{% block head %}
+<script src="{{ url_for('static', filename='B_resize.js') }}"></script>
+{% endblock %}
+
+{% block body %}
+<h3>CONVERT/RESIZE IMAGE</h3>
+<form class="bg-white border p-4">
+  <div class="form-group mb-3">
+    <label for="preset">Preset</label>
+    <select class="form-select" id="preset" onchange="ir.preset(this.value)">
+      <option value="">None</option>
+      <optgroup label="Landscape">
+        <option value="l1080">1080</option>
+        <option value="l720">720</option>
+        <option value="l480">480</option>
+        <option value="l360">360</option>
+      </optgroup>
+      <optgroup label="Portrait">
+        <option value="p1080">1080</option>
+        <option value="p720">720</option>
+        <option value="p480">480</option>
+        <option value="p360">360</option>
+      </optgroup>
+    </select>
+  </div>
+
+  <div class="form-group mb-3">
+    <label for="width">Width <small class="text-danger">(empty to retain original)</small></label>
+    <input type="number" class="form-control" id="width">
+  </div>
+  
+  <div class="form-group mb-3">
+    <label for="height">Height <small class="text-danger">(empty to retain original)</small></label>
+    <input type="number" class="form-control" id="height">
+  </div>
+
+  <div class="form-group mb-3">
+    <label for="format">Format</label>
+    <select class="form-select" id="format">
+      <option value="webp">webp</option>
+      <option value="jpg">jpg</option>
+      <option value="png">png</option>
+    </select>
+  </div>
+
+  <div class="form-group mb-3">
+    <label for="quality">Quality <small class="text-danger">(0=worst, 95=best)</small></label>
+    <input type="number" class="form-control" id="quality" value="75" min="0" max="95">
+  </div>
+
+  <div class="form-group mb-3">
+    <label>Drop Images Here</label>
+    <div id="drop" class="drop"></div>
+  </div>
+</form>
+{% endblock %}

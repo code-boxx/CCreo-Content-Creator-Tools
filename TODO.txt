@@ -1,0 +1,18 @@
+B) Image Format Converter / Resize
+   - Add remove background feature?
+
+C) Cover Generator
+   - Preview output on the page?
+   - More tools to help position text?
+   - "Advance" fields to show all settings?
+
+D) Collage Creator
+   - Add "fancy collage templates"?
+   - Fonts? Layout?
+
+E) Infographic Generator
+
+F) TTS
+
+X) Idea Research
+X) Text Generator

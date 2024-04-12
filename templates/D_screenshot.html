@@ -1,0 +1,36 @@
+{% extends "A_template.html" %}
+
+{% block title %}Website Screenshot{% endblock %}
+
+{% block head %}
+<script src="{{ url_for('static', filename='D_screenshot.js') }}"></script>
+{% endblock %}
+
+{% block body %}
+<h3>TAKE SCREENSHOT OF WEBSITE</h3>
+<div class="mb-3"><small class="text-danger">
+  This module uses Google Chrome to take screenshots.
+  Edit processes/D_screenshot.py and set the path to chrome.exe.
+</small></div>
+<form class="bg-white border p-4" onsubmit="return screenshot.go()">
+  <div class="form-group mb-3">
+    <label for="site">URL</label>
+    <input type="text" class="form-control" id="site" required></textarea>
+  </div>
+
+  <div class="form-group mb-3">
+    <label for="size">Dimensions <small class="text-danger">(width,height)</small></label>
+    <input type="text" class="form-control" id="size" value="1920,1080" required></textarea>
+  </div>
+
+  <div class="form-group mb-3">
+    <label for="format">Format</label>
+    <select class="form-select" id="format">
+      <option value="webp">WEBP</option>
+      <option value="jpg">JPG</option>
+    </select>
+  </div>
+
+  <input type="submit" value="Go" class="btn btn-primary">
+</form>
+{% endblock %}

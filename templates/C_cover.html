@@ -1,0 +1,24 @@
+{% extends "A_template.html" %}
+
+{% block title %}Cover Generator{% endblock %}
+
+{% block head %}
+<script src="{{ url_for('static', filename='C_cover.js') }}"></script>
+{% endblock %}
+
+{% block body %}
+<h3>COVER TEMPLATES</h3>
+<form class="bg-white border p-4" onsubmit="return cover.go()">
+  <div class="form-group mb-3">
+    <label for="template">Template <small class="text-danger">(set your own in static/C_cover.js)</small></label>
+    <select class="form-select" id="template"></select>
+  </div>
+
+  <div class="form-group mb-3">
+    <label for="width">Title/Text</label>
+    <textarea class="form-control" id="txt" required></textarea>
+  </div>
+
+  <input type="submit" value="Generate" class="btn btn-primary">
+</form>
+{% endblock %}

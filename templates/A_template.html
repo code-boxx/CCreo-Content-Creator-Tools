@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% block title %}{% endblock %}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5">
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='A_common.css') }}">
+    <script>var host = {
+      base : "{{ url_for('home', _external=True) }}",
+      process : "{{ url_for('process', _external=True) }}",
+      mod : "{{ mod }}"
+    };</script>
+    <script src="{{ url_for('static', filename='bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='A_common.js') }}"></script>
+    {% block head %}{% endblock %}
+  </head>
+  <body class="bg-light">
+    <!-- (PART A) "CONSOLE" -->
+    <div id="console" class="d-none"><div id="conwrap" class="bg-light p-4">
+      <button id="conclose" type="button" class="btn-close" aria-label="Close" onclick="common.contog()"></button>
+      <div id="conmsg"></div>
+    </div></div>
+
+    <!-- (PART B) CONTENT -->
+    <div class="container p-0">
+      <!-- (B1) NAV BAR -->
+      <nav class="navbar navbar-dark bg-dark sticky-top px-3 mb-4">
+        <a class="navbar-brand icon icon-home3" href="{{ url_for('home') }}"></a>
+        <div class="text-decoration-none text-white icon icon-spinner9" onclick="common.contog(1)"></div>
+      </nav>
+
+      <!-- (B2) BODY -->
+      {% block body %}{% endblock %}
+    </div>
+  </body>
+</html>
