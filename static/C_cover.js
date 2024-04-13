@@ -20,7 +20,7 @@ var covers = {
     font : "C_BOLDFONT.ttf",
     size : 65, spacing: 10, color: "white",
     swidth: 5, scolor: "black",
-    x : 250, y : 70, align : "left", case : true,
+    x : 250, y : 90, align : "left", case : true,
     quality : 75
   },
   "Podcast Demo" : {

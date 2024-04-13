@@ -1,3 +1,3 @@
 virtualenv venv
-call venv\Scripts\activate
+source "venv/bin/activate"
 pip install flask pillow SpeechRecognition pydub

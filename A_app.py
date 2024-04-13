@@ -39,7 +39,7 @@ mods = {
   "G" : {
     "suffix" : "transcribe",
     "name" : "Speech to Text.",
-    "desc" : "@TODO Auto transcribe audio to text."
+    "desc" : "Transcribe audio file to text."
   },
   "ZZ" : {
     "suffix" : "about",
@@ -99,7 +99,8 @@ def process():
   data = json.dumps(data)
   res = subprocess.run(["python", handler, data], shell=True, capture_output=True, text=True)
   # print(data, res)
-  return res.stdout.strip()
+  res = res.stderr if res.stdout=="" else res.stdout
+  return res.strip()
 
 # (PART C) START
 webbrowser.open_new_tab("http://localhost:8080")

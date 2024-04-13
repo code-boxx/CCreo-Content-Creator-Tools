@@ -8,8 +8,8 @@
 {% endblock %}
 
 {% block body %}
-<h3>INFOGRAPHIC TEMPLATES</h3>
-<form class="bg-white border p-4" onsubmit="return info.go()">
+<h3 class="mb-4">INFOGRAPHIC TEMPLATES</h3>
+<div class="mb-4">
   For quick demo - <code>Drop static/DEMO_info.html</code> into the box below.
   To create your own HTML template:
   <ul>
@@ -19,7 +19,9 @@
     <li>Create your infographics, file name must start with <code>SUFFIX_</code> - See <code>static/static/DEMO_info.html</code> for example.</li>
     <li>Simple match <code>data-section="title"</code> in the template.</li>
   </ul>
+</div>
 
+<form class="bg-white border p-4" onsubmit="return info.go()">
   <div class="form-group mb-3">
     <label>Drop HTML Here</label>
     <div id="drop" class="drop"></div>

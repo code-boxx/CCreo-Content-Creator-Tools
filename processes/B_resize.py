@@ -41,6 +41,7 @@ if "width" in param or "height" in param:
 # (PART D) SAVE & DELETE ORIGINAL IMAGE
 img.save(img_save, quality=int(param["quality"]))
 if (img_path != img_save):
+  del img
   os.remove(img_path)
 
 # (PART E) RESPONSE

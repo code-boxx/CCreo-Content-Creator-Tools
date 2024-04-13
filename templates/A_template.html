@@ -25,13 +25,13 @@
     <!-- (PART B) CONTENT -->
     <div class="container p-0">
       <!-- (B1) NAV BAR -->
-      <nav class="navbar navbar-dark bg-dark sticky-top px-3 mb-4">
+      <nav class="navbar navbar-dark bg-dark sticky-top px-3">
         <a class="navbar-brand icon icon-home3" href="{{ url_for('home') }}"></a>
         <div class="text-decoration-none text-white icon icon-spinner9" onclick="common.contog(1)"></div>
       </nav>
 
       <!-- (B2) BODY -->
-      {% block body %}{% endblock %}
+      <div class="p-4">{% block body %}{% endblock %}</div>
     </div>
   </body>
 </html>

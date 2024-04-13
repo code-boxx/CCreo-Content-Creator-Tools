@@ -1,18 +1,26 @@
 ## SIMPLE CONTENT CREATOR TOOLS
-WORK-IN-PROGRESS.
-
 A bunch of content creation tools that I initially made for myself. Decided to "package them nicely" and release it into the wild.
+<br><br>
+
+## :camera: SCREENSHOTS
+<p float="left">
+ <img width="250" src="https://github.com/code-boxx/Content-Creator-Tools/blob/main/static/SS_1.png">
+ <img width="250" src="https://github.com/code-boxx/Content-Creator-Tools/blob/main/static/SS_2.png">
+ <img width="250" src="https://github.com/code-boxx/Content-Creator-Tools/blob/main/static/SS_3.png">
+ <img width="250" src="https://github.com/code-boxx/Content-Creator-Tools/blob/main/static/SS_4.png">
+ <img width="250" src="https://github.com/code-boxx/Content-Creator-Tools/blob/main/static/SS_5.png">
+</p>
 <br><br>
 
 ## :floppy_disk: REQUIREMENTS & INSTALLATION
 1) At least Python 3.9
-2) Run `0_install.bat`
-3) Run `0_launch.bat`
+2) Run `0_install.bat / 0_install.sh`
+3) Run `0_launch.bat / 0_launch.sh`
 <br><br>
 
-## NOTES
+## :ballot_box_with_check: NOTES
 1) All processed files will be saved into the `output` folder.
-2) Tested on Windows only...
+2) Tested on Windows only... But it's so simple it should work just fine.
 <br><br>
 
 ## :white_check_mark: TOOLS
@@ -21,6 +29,7 @@ A bunch of content creation tools that I initially made for myself. Decided to "
 3) Take Screenshot of Website.
 4) Create grid image collage.
 5) Infographics HTML template.
+6) Transcribe audio file to text.
 <br><br>
 
 ## :star: SUPPORT
