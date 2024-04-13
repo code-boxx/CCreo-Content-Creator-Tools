@@ -1,0 +1,28 @@
+{% extends "A_template.html" %}
+
+{% block title %}Alphabet Soup{% endblock %}
+
+{% block head %}
+<script src="{{ url_for('static', filename='H_asoup.js') }}"></script>
+{% endblock %}
+
+{% block body %}
+<h3 class="mb-4">ALPHABET SOUP KEYWORD RESEARCH</h3>
+<form class="bg-white border p-4" onsubmit="return asoup.go()">
+  <div class="form-group mb-3">
+    <label for="engine">Keyword/Search Term</label>
+    <select class="form-select" id="engine">
+      <option value="goo">Google</option>
+      <option value="yan">Yandex</option>
+      <option value="duck">Duck Duck Go</option>
+    </select>
+  </div>
+
+  <div class="form-group mb-3">
+    <label for="keyword">Keyword/Search Term</label>
+    <input type="text" class="form-control" id="keyword" required>
+  </div>
+
+  <input type="submit" class="btn btn-primary" value="Go">
+</form>
+{% endblock %}

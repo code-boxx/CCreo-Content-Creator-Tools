@@ -14,9 +14,6 @@
    - Allow multiple URLs > to textarea
    - Add "pause between each URL"
 
-#) Infographic + Collage Generator
-   - Remove HTML2Canvas. Use Screen Capture API.
-
 X) TTS?
-X) Idea Research - Alphabet Soup?
+X) Idea Research - More tools?
 X) Text Generator?

@@ -30,11 +30,12 @@ A bunch of content creation tools that I initially made for myself. Decided to "
 4) Create grid image collage.
 5) Infographics HTML template.
 6) Transcribe audio file to text.
+7) Simple Alphabet Soup keyword research.
 <br><br>
 
 ## :star: SUPPORT
 1) Just give this project a star. Motivate me to continue developing this project. :wink:
-2) [Sponsor this project](https://github.com/sponsors/code-boxx). Even a small one time amount helps.
+2) Buy me a coffee - [GitHub Sponsor](https://github.com/sponsors/code-boxx). Every small bit helps.
 <br><br>
 
 ## :newspaper: LICENSE

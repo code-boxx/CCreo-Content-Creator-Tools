@@ -38,8 +38,13 @@ mods = {
   },
   "G" : {
     "suffix" : "transcribe",
-    "name" : "Speech to Text.",
+    "name" : "Speech to Text",
     "desc" : "Transcribe audio file to text."
+  },
+  "H" : {
+    "suffix" : "asoup",
+    "name" : "Alphabet Soup Keywords",
+    "desc" : "Automated Alphabet Soup keyword research."
   },
   "ZZ" : {
     "suffix" : "about",
