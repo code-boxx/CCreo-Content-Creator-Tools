@@ -1,14 +1,14 @@
-## SIMPLE CONTENT CREATOR TOOLS
-A bunch of content creation tools that I initially made for myself. Decided to "package them nicely" and release it into the wild.
+## C-CREO : SIMPLE CONTENT CREATOR TOOLS
+A bunch of content creation tools that I initially made for myself. Decided to "package them nicely" and release into the wild.
 <br><br>
 
 ## :camera: SCREENSHOTS
 <p float="left">
- <img width="250" src="https://github.com/code-boxx/Content-Creator-Tools/blob/main/static/SS_1.png">
- <img width="250" src="https://github.com/code-boxx/Content-Creator-Tools/blob/main/static/SS_2.png">
- <img width="250" src="https://github.com/code-boxx/Content-Creator-Tools/blob/main/static/SS_3.png">
- <img width="250" src="https://github.com/code-boxx/Content-Creator-Tools/blob/main/static/SS_4.png">
- <img width="250" src="https://github.com/code-boxx/Content-Creator-Tools/blob/main/static/SS_5.png">
+ <img width="250" src="https://github.com/code-boxx/CCreo-Content-Creator-Tools/blob/main/static/SS_1.png">
+ <img width="250" src="https://github.com/code-boxx/CCreo-Content-Creator-Tools/blob/main/static/SS_2.png">
+ <img width="250" src="https://github.com/code-boxx/CCreo-Content-Creator-Tools/blob/main/static/SS_3.png">
+ <img width="250" src="https://github.com/code-boxx/CCreo-Content-Creator-Tools/blob/main/static/SS_4.png">
+ <img width="250" src="https://github.com/code-boxx/CCreo-Content-Creator-Tools/blob/main/static/SS_5.png">
 </p>
 <br><br>
 
