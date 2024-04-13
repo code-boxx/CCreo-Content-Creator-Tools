@@ -1,12 +1,13 @@
 ## SIMPLE CONTENT CREATOR TOOLS
 WORK-IN-PROGRESS.
 
-A bunch of content creation tools that I initially made for myself. Decided to "package them nicely" and share.
+A bunch of content creation tools that I initially made for myself. Decided to "package them nicely" and release it into the wild.
 <br><br>
 
-## :floppy_disk: INSTALLATION
-1) Run `0_install.bat`.
-2) Run `0_launch.bat`.
+## :floppy_disk: REQUIREMENTS & INSTALLATION
+1) At least Python 3.9
+2) Run `0_install.bat`
+3) Run `0_launch.bat`
 <br><br>
 
 ## NOTES
@@ -19,6 +20,7 @@ A bunch of content creation tools that I initially made for myself. Decided to "
 2) Blog/Youtube/Video/Podcast Cover Template.
 3) Take Screenshot of Website.
 4) Create grid image collage.
+5) Infographics HTML template.
 <br><br>
 
 ## :star: SUPPORT

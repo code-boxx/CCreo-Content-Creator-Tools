@@ -5,6 +5,8 @@
 {% block head %}
 <style>
 #modstack{display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}
+.card-img-top{transition:all 0.3s}
+.card-img-top:hover{transform:scale(1.1);}
 @media screen and (max-width:768px){
   #modstack{grid-template-columns:repeat(2,minmax(0,1fr))}
 }

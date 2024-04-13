@@ -10,9 +10,10 @@ D) Collage Creator
    - Add "fancy collage templates"?
    - Fonts? Layout?
 
-E) Infographic Generator
+E) Infographic + Collage Generator
+   - Remove HTML2Canvas. Use Screen Capture API.
+
 
 F) TTS
-
 X) Idea Research
 X) Text Generator
