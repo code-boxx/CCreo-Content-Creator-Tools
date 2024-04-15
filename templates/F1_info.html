@@ -35,5 +35,17 @@
     <label>Drop HTML Here</label>
     <div id="drop" class="drop"></div>
   </div>
+
+  <div class="form-check">
+    <input class="form-check-input" type="radio" id="thumbNo" name="thumb">
+    <label class="form-check-label" for="thumbNo">Do not generate thumbnails.</label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="radio" id="thumbYes" name="thumb" checked>
+    <label class="form-check-label" for="thumbYes">
+      Also generate a thumbnail that has a height of 
+      <input class="form-control" type="number" value="600" id="thumb">
+    </label>
+  </div>
 </form>
 {% endblock %}

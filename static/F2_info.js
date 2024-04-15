@@ -6,6 +6,7 @@ function capture () {
     let data = new FormData();
     data.append("file", new File([blob], param.img, { type: "image/webp" }));
     data.append("mod", "F1");
+    if (+param.thumb != 0) { data.append("thumb", param.thumb); }
 
     // (A2) SEND TO SERVER
     fetch(param.process, { method: "POST", body: data})

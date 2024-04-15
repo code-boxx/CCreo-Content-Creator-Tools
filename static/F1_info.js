@@ -29,7 +29,8 @@ var info = {
     // (B2) OPEN TEMPLATE IN NEW WINDOW
     let suffix = file.name.split("_")[0],
         img = file.name.replace(".html", ".webp"),
-        win = window.open(host.base + `F2?suffix=${encodeURIComponent(suffix)}&img=${encodeURIComponent(img)}`);
+        thumb = document.getElementById("thumbYes").checked ? document.getElementById("thumb").value : 0;
+        win = window.open(host.base + `F2?suffix=${encodeURIComponent(suffix)}&img=${encodeURIComponent(img)}&thumb=${thumb}`);
 
     // (B3) "TRANSFER" HTML INTO TEMPLATE
     common.conmsg("Processing - " + file.name);
@@ -54,6 +55,7 @@ var info = {
             info.lock = false;
             common.conmsg("Process completed.");
             common.conlock();
+            // common.contog();
           } else { info.go(); }
         };
         win.addEventListener("ok", next);

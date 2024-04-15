@@ -8,7 +8,8 @@
     <script>var param = {
       base : "{{ url_for('home', _external=True) }}",
       process : "{{ url_for('process', _external=True) }}",
-      img : "{{ img }}"
+      img : "{{ img }}",
+      thumb : "{{ thumb }}"
     };</script>
     <script src="{{ url_for('static', filename='html2canvas.min.js') }}"></script>
     <script src="{{ url_for('static', filename='F2_info.js') }}"></script>
