@@ -24,8 +24,6 @@
   position: absolute; top: 100px; left: 30px;
   width: 250px; height: 350px;
   display: flex; align-items: center;
-}
-#points > *:first-child {
   padding: 10px;
   background: rgba(255, 255, 255, 0.7);
 }

@@ -41,8 +41,9 @@ var info = {
         let doc = new DOMParser().parseFromString(reader.result, "text/html");
 
         // (B3-3) "TRANSFER HTML"
-        for (let s of win.document.querySelectorAll("[data-section]")) {
-          s.appendChild(doc.querySelector(`[data-section=${s.dataset.section}]`));
+        for (let target of win.document.querySelectorAll("[data-section]")) {
+          let source = doc.querySelector(`[data-section=${target.dataset.section}]`);
+          if (source) { target.innerHTML = source.innerHTML; }
         }
 
         // (B3-4) SAVE SCREENSHOT
