@@ -9,11 +9,13 @@
 #) Collage Creator
    - Add "fancy collage templates"?
    - Fonts? Layout?
+   - Change HTML2CANVAS to empty template page.
 
 #) Screenshot
    - Allow multiple URLs > to textarea
    - Add "pause between each URL"
 
+#) Keyword Research - Add "who where what when why how"
+
 X) TTS?
-X) Idea Research - More tools?
 X) Text Generator?

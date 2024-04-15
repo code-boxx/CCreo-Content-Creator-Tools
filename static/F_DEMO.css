@@ -4,7 +4,7 @@
   src: url(C_BOLDFONT.ttf);
 }
 * { box-sizing: border-box; }
-#info {
+#wrap {
   position: relative;
   width: 500px; height: 500px;
   background: url(F_DEMO.webp) no-repeat;

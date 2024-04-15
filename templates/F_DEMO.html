@@ -1,11 +1,10 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Infographic Demo Template</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='F_DEMO.css') }}">
-  </head>
-  <body><div id="info">
-    <div id="title" data-section="title"></div>
-    <div id="points" data-section="points"></div>
-  </div></body>
-</html>
+{% extends "F2_template.html" %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='F_DEMO.css') }}">
+{% endblock %}
+
+{% block body %}
+<div id="title" data-section="title"></div>
+<div id="points" data-section="points"></div>
+{% endblock %}

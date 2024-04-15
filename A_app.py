@@ -78,7 +78,7 @@ def modF2():
     return "Template not found - " + template
 
   # (B4-2) SERVE TEMPLATE
-  return render_template(template)
+  return render_template(template, img=request.args.get("img"))
 
 # (B5) FUNKY PROCESSING
 @app.route("/process", methods=["POST"])

@@ -3,7 +3,6 @@
 {% block title %}Infographic Templates{% endblock %}
 
 {% block head %}
-<script src="{{ url_for('static', filename='html2canvas.min.js') }}"></script>
 <script src="{{ url_for('static', filename='F1_info.js') }}"></script>
 {% endblock %}
 
@@ -12,13 +11,23 @@
 <div class="mb-4">
   For quick demo - <code>Drop static/DEMO_info.html</code> into the box below.
   To create your own HTML template:
-  <ul>
-    <li>Start by creating <code>templates/F_SUFFIX.html</code> - See <code>templates/F_DEMO.html</code> for example.</li>
-    <li>Must have <code>&lt;div id=&quot;info&quot;&gt;</code> wrapper.</li>
-    <li>Mark all the variable sections with <code>data-section="title"</code></li>
-    <li>Create your infographics, file name must start with <code>SUFFIX_</code> - See <code>static/static/DEMO_info.html</code> for example.</li>
-    <li>Simple match <code>data-section="title"</code> in the template.</li>
-  </ul>
+  <ol>
+    <li>
+      Start by creating <code>templates/F_SUFFIX.html</code> - See <code>templates/F_DEMO.html</code> for example.
+      <ul>
+        <li>Must <code>extends "F2_template.html"</code>.</li>
+        <li>Use <code>block head</code> section to load your custom CSS/JS.</li>
+        <li>Use <code>block body</code> to create your template. TLDR - Just set all the variable sections with <code>data-section="title"</code></li>
+      </ul>
+    </li>
+    <li>
+      Create your infographics - See <code>static/static/DEMO_info.html</code> for example.
+      <ul>
+        <li>File name must start with <code>SUFFIX_</code></li>
+        <li>Simply match <code>data-section="title"</code> in the template.</li>
+      </ul>
+    </li>
+  </ol>
 </div>
 
 <form class="bg-white border p-4" onsubmit="return info.go()">

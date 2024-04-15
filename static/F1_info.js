@@ -28,10 +28,12 @@ var info = {
 
     // (B2) OPEN TEMPLATE IN NEW WINDOW
     let suffix = file.name.split("_")[0],
-        win = window.open(host.base + "F2?suffix=" + suffix);
+        img = file.name.replace(".html", ".webp"),
+        win = window.open(host.base + `F2?suffix=${encodeURIComponent(suffix)}&img=${encodeURIComponent(img)}`);
 
     // (B3) "TRANSFER" HTML INTO TEMPLATE
-    win.onload = () => {
+    common.conmsg("Processing - " + file.name);
+    win.addEventListener("load", () => {
       // (B3-1) READ CURRENT HTML
       let reader = new FileReader();
       reader.onload = () => {
@@ -44,26 +46,21 @@ var info = {
         }
 
         // (B3-4) SAVE SCREENSHOT
-        html2canvas(win.document.getElementById("info")).then(canvas => canvas.toBlob(blob => {
-          let data = new FormData();
-          data.append("file", new File([blob], file.name.replace(".html", ".webp"), { type: "image/webp" }));
-          common.fetch(data,
-            txt => common.conmsg(txt),
-            err => common.conmsg(err.message),
-            () => {
-              win.close();
-              common.conmsg(file.name + " - OK");
-              if (info.proc.length==0) {
-                info.lock = false;
-                common.conmsg("Process completed.");
-                common.conlock();
-              } else { info.go(); }
-            }
-          );
-        }, "image/webp"));
+        let next = e => {
+          common.conmsg(file.name + " - " + e.detail);
+          win.close();
+          if (info.proc.length==0) {
+            info.lock = false;
+            common.conmsg("Process completed.");
+            common.conlock();
+          } else { info.go(); }
+        };
+        win.addEventListener("ok", next);
+        win.addEventListener("error", next);
+        win.capture();
       };
       reader.readAsText(file);
-    };
+    });
   }
 };
 
