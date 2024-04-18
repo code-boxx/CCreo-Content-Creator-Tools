@@ -1,3 +1,7 @@
+#) Bug - Cannot set "&" as title.
+  - Sqlite database
+  - Save params into database, process pull from database.
+
 #) Image Format Converter / Resize
    - Add remove background feature?
 
